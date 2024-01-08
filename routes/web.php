@@ -33,3 +33,14 @@ Route::get('/delete-employee/{id}', [App\Http\Controllers\Employee::class, "dele
 
 Route::get('/edit-employee/{id}',  [App\Http\Controllers\Employee::class, "getUpdateEmployee"]);
 Route::put('/edit-employee/{id}',  [App\Http\Controllers\Employee::class, "updateEmployee"]);
+
+
+
+
+Route::get('/homepage',function(){
+    return view('homepage.index');
+});
+
+Route::get('/about',function(){
+    return view('homepage.about');
+});
